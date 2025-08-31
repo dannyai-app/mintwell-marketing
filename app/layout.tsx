@@ -41,6 +41,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </Link>
               </div>
               <nav className="flex items-center space-x-4" aria-label="Primary">
+                <Link href="/#features-overview" className="text-mintwell-navy hover:text-mintwell-teal transition-colors duration-200 font-medium">Features</Link>
+                <Link href="/#advisor-workflow" className="text-mintwell-navy hover:text-mintwell-teal transition-colors duration-200 font-medium">Workflow</Link>
+                <Link href="/#report-generation" className="text-mintwell-navy hover:text-mintwell-teal transition-colors duration-200 font-medium">Reports</Link>
+                <Link href="/#pricing-section" className="text-mintwell-navy hover:text-mintwell-teal transition-colors duration-200 font-medium">Pricing</Link>
+                <Link href="/#testimonials-section" className="text-mintwell-navy hover:text-mintwell-teal transition-colors duration-200 font-medium">Testimonials</Link>
+                <Link href="/#security-compliance" className="text-mintwell-navy hover:text-mintwell-teal transition-colors duration-200 font-medium">Security</Link>
+                <Link href="/#faq-section" className="text-mintwell-navy hover:text-mintwell-teal transition-colors duration-200 font-medium">FAQ</Link>
                 <Link href="/for-advisors" className="text-mintwell-navy hover:text-mintwell-teal transition-colors duration-200 font-medium">For Advisors</Link>
                 <Link href="/for-clients" className="text-mintwell-navy hover:text-mintwell-teal transition-colors duration-200 font-medium">For Clients</Link>
                 <Link href="/for-advisors" className="bg-mintwell-blue hover:bg-blue-800 text-white px-6 py-2 rounded-xl font-bold uppercase text-sm transition-all duration-200 shadow-lg hover:shadow-xl">Get Started</Link>
@@ -69,11 +76,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <h4 className="text-lg font-bold mb-6">Product</h4>
                 <ul className="space-y-3">
-                  <li><Link href="/" className="text-blue-200 hover:text-white transition-colors duration-200">Features</Link></li>
-                  <li><Link href="/for-advisors" className="text-blue-200 hover:text-white transition-colors duration-200">Pricing</Link></li>
-                  <li><span className="text-blue-200">Security</span></li>
-                  <li><span className="text-blue-200">Integrations</span></li>
-                  <li><span className="text-blue-200">API</span></li>
+                  <li><Link href="/#features-overview" className="text-blue-200 hover:text-white transition-colors duration-200">Features</Link></li>
+                  <li><Link href="/#pricing-section" className="text-blue-200 hover:text-white transition-colors duration-200">Pricing</Link></li>
+                  <li><Link href="/#security-compliance" className="text-blue-200 hover:text-white transition-colors duration-200">Security</Link></li>
+                  <li><Link href="/#report-generation" className="text-blue-200 hover:text-white transition-colors duration-200">Integrations</Link></li>
+                  <li><Link href="/#advisor-workflow" className="text-blue-200 hover:text-white transition-colors duration-200">API</Link></li>
                 </ul>
               </div>
               <div>
@@ -81,9 +88,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <ul className="space-y-3">
                   <li><Link href="/support" className="text-blue-200 hover:text-white transition-colors duration-200">Help Center</Link></li>
                   <li><Link href="/support" className="text-blue-200 hover:text-white transition-colors duration-200">Contact Us</Link></li>
-                  <li><span className="text-blue-200">Training</span></li>
-                  <li><span className="text-blue-200">Webinars</span></li>
-                  <li><span className="text-blue-200">Status</span></li>
+                  <li><Link href="/#advisor-workflow" className="text-blue-200 hover:text-white transition-colors duration-200">Training</Link></li>
+                  <li><Link href="/#testimonials-section" className="text-blue-200 hover:text-white transition-colors duration-200">Webinars</Link></li>
+                  <li><Link href="/support" className="text-blue-200 hover:text-white transition-colors duration-200">Status</Link></li>
                 </ul>
               </div>
             </div>
@@ -101,3 +108,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
