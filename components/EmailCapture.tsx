@@ -21,11 +21,11 @@ export default function EmailCapture({
   };
 
   return (
-    <form onSubmit={onSubmit} className="w-full max-w-md mx-auto">
-      <label htmlFor="email" className="block text-sm font-medium text-mintwell-navy mb-2">
+    <form onSubmit={onSubmit} className="w-full max-w-xl mx-auto">
+      <label htmlFor="email" className="block text-sm sm:text-base font-medium text-mintwell-navy mb-2">
         {label}
       </label>
-      <div className="flex gap-2">
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-[1fr_auto] md:items-center">
         <input
           id="email"
           type="email"
@@ -33,11 +33,13 @@ export default function EmailCapture({
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder={placeholder}
-          className="flex-1 px-4 py-3 rounded-xl border border-mintwell-gray focus:outline-none focus:ring-2 focus:ring-mintwell-teal"
+          inputMode="email"
+          autoComplete="email"
+          className="w-full px-4 py-3 rounded-xl border border-mintwell-gray focus:outline-none focus:ring-2 focus:ring-mintwell-teal text-sm sm:text-base"
         />
         <button
           type="submit"
-          className="bg-mintwell-blue hover:bg-blue-800 text-white px-6 py-3 rounded-xl font-bold transition-colors"
+          className="w-full md:w-auto bg-mintwell-blue hover:bg-blue-800 text-white px-6 py-3 rounded-xl font-bold transition-colors text-sm sm:text-base"
         >
           {cta}
         </button>
